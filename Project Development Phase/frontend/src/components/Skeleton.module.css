@@ -1,0 +1,85 @@
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 255, 255, 0.08) 37%,
+    rgba(255, 255, 255, 0.03) 63%
+  );
+  background-size: 400% 100%;
+  animation: pulseShimmer 1.4s ease infinite;
+}
+
+@keyframes pulseShimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card {
+  padding: 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  height: 16px;
+  width: 45%;
+  border-radius: 4px;
+}
+
+.value {
+  height: 32px;
+  width: 70%;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.footer {
+  height: 12px;
+  width: 30%;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.chartContainer {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chartHeader {
+  height: 24px;
+  width: 30%;
+  border-radius: 4px;
+}
+
+.chartBody {
+  flex-grow: 1;
+  width: 100%;
+  border-radius: var(--radius-sm);
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cell {
+  height: 20px;
+  border-radius: 4px;
+}

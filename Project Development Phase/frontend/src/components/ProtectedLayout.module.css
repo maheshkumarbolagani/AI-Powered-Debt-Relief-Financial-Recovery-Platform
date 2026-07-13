@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contentWrapper {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+  background-color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .mainContainer {
+    height: auto;
+    overflow: visible;
+  }
+  .contentWrapper {
+    padding: 20px 16px;
+  }
+}
